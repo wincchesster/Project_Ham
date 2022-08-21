@@ -179,6 +179,32 @@ h1 {
 
 /* -------------------------- Main content: -------------------------------- */
 
+.features {
+    height: 370px;
+    display: flex;
+}
 
+.features-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    gap: 47px;
+    
+}
+
+.features-item-1, .features-item-3 {
+    background: #1C2A33;
+    color: #18CFAB;
+}
+
+.features-item-2, .features-item-4 {
+    background: #18CFAB;
+    color: #ffffff;
+}
 
 

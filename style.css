@@ -4,30 +4,19 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
-/* 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
 
-}
-
-.logo  {
-    position: relative;
-    
-}
-
-
-.logo > span {
-    position: fixed;
-    width: 31px;    
-    height: 31px;
-    left: 22.5px;
-    top: 27px;
+h2 {
     font-weight: 700;
-    font-size: 39px;
-    line-height: 31px;
-    color: #ffff;
-} */
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
 
 .header {
     height: 100vh;
@@ -56,6 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
 }
 
@@ -94,38 +84,101 @@ body {
     font-size: 16px;
 }
 
-.menu-item {
+.menu-link {
     position: relative;
 }
 
-.menu-item:hover {
+.menu-link:hover, .menu-magnifier:hover {
     color: #18CFAB;
     cursor: pointer;
 }
 
-.menu-item::after {
+.menu-link::after {
     position: absolute;
     content: '';
     height: 2px;
     bottom: -51px; 
     margin: 0 auto;
-      left: 0;
+    left: 0;
     right: 0;
-      width: 0%;
-      background: #18CFAB;
-      transition: 0.2s;
+    width: 0%;
+    background: #18CFAB;
+    transition: 0.2s;
 }
  
 
-.menu-item:hover:after {
+.menu-link:hover:after {
     position: absolute;
     content: '';
     height: 2px;
     bottom: -51px; 
     margin: 0 auto;
-      left: 0;
+    left: 0;
     right: 0;
-      width: 100%;
-      background: #18CFAB;
+    width: 100%;
+    background: #18CFAB;
 }
- 
+
+.banner-content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 129px;
+}
+
+.banner-content-headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-content-headlines span {
+    color: #18CFAB;
+}
+
+.banner-content-headlines p {
+    font-weight: 400;
+    font-size: 34px;
+    color: #D4D4D4;
+}
+
+.btn {
+    box-sizing: content-box;
+    width: 169px;
+    height: 63px;
+    border-radius: 7px;
+    border-top: 5px white solid;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    transition: 0.2s;
+}
+
+.explore-btn {
+    background: #18CFAB;
+}
+
+.purchase-btn {
+    background: #00CBF6;
+}
+
+.explore-btn:hover {
+    background: #15b999;
+    border-top: 4.5px #0d7d67 solid;    
+}
+
+.purchase-btn:hover {
+    background: #00c3e9;
+    border-top: 4.5px #009dbc solid;  
+}
+
+/* -------------------------- Main content: -------------------------------- */
+
+
+
+

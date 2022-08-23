@@ -5,17 +5,57 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
 h2 {
     font-weight: 700;
     font-size: 35px;
     text-transform: uppercase;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 78px;
-    text-transform: uppercase;
+h3 {
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 83px 0 100px;
+    color: #4E4E4E;
 }
+
+h3::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: 74px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 75px;
+    background: #18CFAB;
+    
+}
+h3::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: 69px; 
+    margin: 0 auto;
+    left: -20px;
+    right: 0;
+    width: 75px;
+    background: #18CFAB;
+    
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 
 
 .header {
@@ -205,6 +245,59 @@ h1 {
 .features-item-2, .features-item-4 {
     background: #18CFAB;
     color: #ffffff;
+}
+
+.services-nav {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.services-nav-link {
+    color: #717171;
+    background: #F8FCFE;
+    border: 1px #EDEFEF solid;
+    width: 16.6%;
+    line-height: 38px;
+    padding: 16px 0 15px;
+    text-align: center;
+
+}
+
+.services-nav-link.active {
+    position: relative;
+    background: #18CFAB;
+    color: white;
+    border: 1px #18CFAB solid;
+}
+
+.services-nav-link.active::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid #48cfaa;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    top: 95%;
+    right: 42%;
+}
+
+.services-nav-link:hover {
+    border: 1px #18CFAB solid;
+}
+
+.services-content {
+    display: flex;
+    font-weight: 300;
+    font-size: 13.645px;
+    line-height: 24px;
+    color: #777777;
+    gap: 15px;
+}
+
+.services-content-articles {
+    padding-bottom: 91px;
 }
 
 

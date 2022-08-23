@@ -199,7 +199,7 @@ h3::before {
     transition: 0.2s;
 }
 
-.explore-btn {
+.green-btn {
     background: #18CFAB;
 }
 
@@ -207,7 +207,7 @@ h3::before {
     background: #00CBF6;
 }
 
-.explore-btn:hover {
+.green-btn:hover {
     background: #15b999;
     border-top: 4.5px #0d7d67 solid;    
 }
@@ -217,7 +217,7 @@ h3::before {
     border-top: 4.5px #009dbc solid;  
 }
 
-/* -------------------------- Main content: -------------------------------- */
+/* -------------------------- Features: -------------------------------- */
 
 .features {
     height: 370px;
@@ -246,6 +246,9 @@ h3::before {
     background: #18CFAB;
     color: #ffffff;
 }
+
+/* -------------------------- Services: -------------------------------- */
+
 
 .services-nav {
     display: flex;
@@ -300,4 +303,68 @@ h3::before {
     padding-bottom: 91px;
 }
 
+/* -------------------------- Purchase: -------------------------------- */
 
+
+.purchase {
+    background: url(./img/Sections_background/section-2.jpg);
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 125px 0;
+    
+}
+
+.purchase span {
+    font-weight: 700;
+    font-size: 40px;
+    color: #18CFAB;
+    text-transform: uppercase;
+}
+
+.purchase p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #D8D8D8;
+    padding-top: 13px;
+    padding-bottom: 70px;
+}
+
+
+/* -------------------------- Amazing Work: -------------------------------- */
+.amazing-work {
+    background: #E9EDEF;
+}
+
+
+.amazing-work-tabs {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+
+}
+
+.amazing-work-tab {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    border: 1px #DADADA solid;
+    padding: 15px 20px;
+}
+
+.amazing-work-tab.active {
+    border: 1px #18CFAB solid;
+}
+
+
+
+
+/* -------------------------- Footer: -------------------------------- */
+
+footer {
+    color: #AEAEAE;
+    text-align: center;
+    padding: 48px 0;
+    background: #22353F;
+}

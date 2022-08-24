@@ -430,16 +430,29 @@ h3::before {
     color: white;
     padding: 14px 18px;
     line-height: 20px;
+    transition: 0.1s;
 }
 
 .news-cover-link {
     position: relative;
     width: 208px;
+    cursor: pointer;
+}
+
+.news-cover-link:hover .date {
+    background: #18CFAB;
+}
+
+.news-cover-link:hover .descript span {
+    color: #18CFAB;
 }
 
 .descript {
     text-align: left;
     padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.1s;
 }
 
 .descript span {
@@ -447,13 +460,34 @@ h3::before {
     font-size: 17px;
     line-height: 39px;
     color: #717171;
+    width: 100%;
+    transition: 0.1s;
 }
 
-.descript p {
+.author, .comment {
     font-weight: 300;
     font-size: 14px;
     line-height: 39px;
     color: #777777;
+}
+
+.author {
+    position: relative;
+}
+
+.author::after {
+    content: '';
+    position: absolute;
+    background-color: #848684;
+    width: 0.5px;
+    height: 50%;
+    bottom: 10px;
+    right: -10px;
+}
+
+
+.comment {
+    padding-left: 20px;
 }
 
 

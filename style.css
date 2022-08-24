@@ -189,7 +189,7 @@ h3::before {
     box-sizing: content-box;
     width: 169px;
     height: 63px;
-    border-radius: 7px;
+    border-radius: 5px;
     border-top: 5px white solid;
     color: white;
     font-weight: 700;
@@ -206,6 +206,29 @@ h3::before {
 .purchase-btn {
     background: #00CBF6;
 }
+
+.load-more-btn {
+    background: #18CFAB;
+    border: none;
+    position: relative;
+    margin: 70px 0;
+}
+
+.load-more-btn::before {
+    content: "+";
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    top: 15px;
+    left: 15px;
+}
+
+.load-more-btn:hover {
+    background: #0d7d67;
+}
+
 
 .green-btn:hover {
     background: #15b999;
@@ -335,6 +358,8 @@ h3::before {
 /* -------------------------- Amazing Work: -------------------------------- */
 .amazing-work {
     background: #E9EDEF;
+    text-align: center;
+
 }
 
 
@@ -357,7 +382,79 @@ h3::before {
     border: 1px #18CFAB solid;
 }
 
+.amazing-work-templates {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.amazing-work-templates img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+}
+
+.aw-template {
+    width: 25%;
+    transition: 0.2s;
+}
+
+.load-more-btn p {
+    padding-left: 18px;
+}
+
+/* -------------------------- News: -------------------------------- */
+
+.news {
+    text-align: center;
+    padding-bottom: 129px;
+}
+
+.news-covers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.news-cover-link img {
+    
+    width: 100%;
+    object-fit: cover;	
+}
+
+.date {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #203E38;
+    color: white;
+    padding: 14px 18px;
+    line-height: 20px;
+}
+
+.news-cover-link {
+    position: relative;
+    width: 208px;
+}
+
+.descript {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.descript span {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 39px;
+    color: #717171;
+}
+
+.descript p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 39px;
+    color: #777777;
+}
 
 
 /* -------------------------- Footer: -------------------------------- */

@@ -62,8 +62,10 @@ h3::before {
     height: 100vh;
     background: url(./img/Sections_background/section-1\(header\).jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     color: white;
+    background-position: center;
     
 }
 
@@ -211,7 +213,7 @@ h3::before {
     background: #18CFAB;
     border: none;
     position: relative;
-    margin: 70px 0;
+    margin-top: 70px;
 }
 
 .load-more-btn::before {
@@ -239,6 +241,49 @@ h3::before {
     background: #00c3e9;
     border-top: 4.5px #009dbc solid;  
 }
+
+.loading-btn {
+    width:63px;
+    height:63px;
+    border:4px solid #1e9e84;
+    border-top:4px solid #18CFAB;
+    border-radius:50%;
+    margin-top: 70px;
+    color: #E9EDEF;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+  
+  @-webkit-keyframes rotate {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+  }
+  
+  @-moz-keyframes rotate {
+      from {-moz-transform: rotate(0deg);}
+      to {-moz-transform: rotate(360deg);}
+  }
+  
+  @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
 
 /* -------------------------- Features: -------------------------------- */
 
@@ -276,6 +321,7 @@ h3::before {
 .services-nav {
     display: flex;
     padding-bottom: 25px;
+    cursor: pointer;
 }
 
 .services-nav-link {
@@ -314,7 +360,7 @@ h3::before {
 }
 
 .services-content {
-    display: flex;
+    display: none;
     font-weight: 300;
     font-size: 13.645px;
     line-height: 24px;
@@ -322,8 +368,23 @@ h3::before {
     gap: 15px;
 }
 
+.services-content.active {
+    display: flex;
+    font-weight: 300;
+    font-size: 13.645px;
+    line-height: 24px;
+    color: #777777;
+    gap: 15px;
+    
+}
+
 .services-content-articles {
     padding-bottom: 91px;
+}
+
+.services-content img {
+    width: 190px;
+    height: 100%;
 }
 
 /* -------------------------- Purchase: -------------------------------- */
@@ -359,6 +420,7 @@ h3::before {
 .amazing-work {
     background: #E9EDEF;
     text-align: center;
+    padding-bottom:  70px;
 
 }
 
@@ -396,11 +458,38 @@ h3::before {
 .aw-template {
     width: 25%;
     transition: 0.2s;
+    position: relative;
+    float: left;
+    animation: scale 0.5sforwards;
+    -webkit-animation: scale 0.5s forwards;
+    transform-origin:   left;
 }
+
+
+@-webkit-keyframes scale  {
+    0% {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
 
 .load-more-btn p {
     padding-left: 18px;
 }
+
+.hiden {
+    display: none;
+}
+
+
+
+
 
 /* -------------------------- News: -------------------------------- */
 
@@ -437,6 +526,9 @@ h3::before {
     position: relative;
     width: 208px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+
 }
 
 .news-cover-link:hover .date {
@@ -490,6 +582,103 @@ h3::before {
     padding-left: 20px;
 }
 
+/* -------------------------- Feedback: -------------------------------- */
+
+.feedback {
+    background: url(./img/Sections_background/section-3.jpg);
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 104px;
+    
+}
+
+.feedback h3 {
+    color: white;
+}
+
+.feedback > p {
+    padding: 36px 0;
+    color: #BBBBBB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+.team span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #18CFAB;
+    text-transform: uppercase;
+}
+
+.team p {
+    font-weight: 300;
+    font-size: 13px;
+    color: #BBBBBB;
+    padding: 10px 0 38px;
+}
+
+.team-intro-max-case img {
+    border-radius: 50%;
+    border: 12px #1fdab537 solid;
+    width: 142px;
+    height: 142px;
+}
+
+
+.team-intro-min {
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-intro-min p {
+    padding: 8px 11px 8px 9px;
+    border: 1px #BBBBBB solid;
+    display: inline-block
+}
+
+.arrow {
+    border: solid #BBBBBB;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.team-intro-min p:hover {
+    background: #18CFAB;
+}
+
+.team-intro-min .arrow:hover {
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+.team-intro-min-case img {
+    border-radius: 50%;
+    border: 6px #1fdab537 solid;
+    width: 58px;
+    height: 59px;
+}
+
+.team-intro-min-case.active {
+    margin-bottom: 30px;
+}
 
 /* -------------------------- Footer: -------------------------------- */
 
@@ -499,3 +688,27 @@ footer {
     padding: 48px 0;
     background: #22353F;
 }
+
+
+
+/* test */
+
+.gallery li { 
+    display: none;
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+  }
+  .more, .less {
+    background-color: #000;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin-top: 6px;
+    padding: 6px 0;
+    text-align: center;
+      text-transform: uppercase;
+    width: 320px;
+  }

@@ -261,29 +261,83 @@
                         <li class="team-intro-max-case"></li>
                     </ul>
                     <ul class="team-intro-min">
-                        <p><i class="arrow left"></i></p>
-                        <li class="team-intro-min-case">
-                            <img src="./img/elements/ava1.jpg" alt="avatar-1">
-                        </li>
-                        <li class="team-intro-min-case">
-                            <img src="./img/elements/avatar-2.jpg" alt="avatar-2">
-                        </li>
-                        <li class="team-intro-min-case active">
-                            <img src="./img/elements/Ali.jpg" alt="avatar-3">
-                        </li>
-                        <li class="team-intro-min-case">
-                            <img src="./img/elements/avatar-4.png" alt="avatar-4">
-                        </li>
-                        <p><i class="arrow right"></i></p>
+                        <button class="arrow-btn left"><i class="arrow arrow-left left"></i></button>
+                        <div class="carousel">
+                            <li class="team-intro-min-case">
+                                <img class="min-avatar" src="./img/elements/ava1.jpg" alt="avatar-1">
+                            </li>
+                            <li class="team-intro-min-case">
+                                <img class="min-avatar" src="./img/elements/avatar-2.jpg" alt="avatar-2">
+                            </li>
+                            <li class="team-intro-min-case active">
+                                <img class="min-avatar" src="./img/elements/Ali.jpg" alt="avatar-3">
+                            </li>
+                            <li class="team-intro-min-case">
+                                <img class="min-avatar" src="./img/elements/avatar-4.png" alt="avatar-4">
+                            </li>
+                        </div>
+   
+                        <button class="arrow-btn right"><i class="arrow arrow-right right"></i></button>
                     </ul>
                 </div>
         </section>
 
 
-         <!----------------- Gallery section: ----------------------->
-        <section class="gallery container">
-            <h3>Gallery of best images</h3>
+
+        <section class="test container feedback">
+
+            <h3>What People Say About theHam</h3>
+            <img src="./img/elements/Troti.svg" alt="troti">
+            <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam <br> facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+
+
+            <div class="carousel-wrapper" js-carousel-wrapper>
+
+                <!-- Images -->
+                <div class="carousel-item" js-carousel-item data-active-slide>
+                  <img src="./img/elements/ava1.jpg" alt="">
+                </div>
+                <div class="carousel-item" js-carousel-item>
+                  <img src="./img/elements/avatar-2.jpg" alt="">
+                </div>
+                <div class="carousel-item" js-carousel-item>
+                  <img src="./img/elements/Ali.jpg" alt="">
+                </div>
+                <div class="carousel-item" js-carousel-item>
+                  <img src="./img/elements/avatar-4.png" alt="">
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button type="button" class="carousel-arrow prev" data-carousel-arrows data-dir="prev"> &#x2039; </button>
+                <button type="button" class="carousel-arrow next" data-carousel-arrows data-dir="next"> &#x203A; </button>
+                <!-- Pagination Dots -->
+                <div class="carousel-dots" data-carousel-dots>
+                  <button type="button" class="dots dot-btn" data-active-dot js-data-dots data-dots-index="1"><img src="./img/elements/ava1.jpg" alt=""></button>
+                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="2"><img src="./img/elements/avatar-2.jpg" alt=""></button>
+                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="3"><img src="./img/elements/Ali.jpg" alt=""></button>
+                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="4"> <img src="./img/elements/avatar-4.png" alt=""> </button>
+                  
+                </div>
+              </div>
+
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!----------------- Gallery section: ----------------------->
+        <!-- <section class="gallery container">
+            <h3>Gallery of best images</h3>
+        </section> -->
     </main>
 
      <!----------------- Footer section: ----------------------->

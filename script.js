@@ -98,7 +98,6 @@ coverBoards.forEach(cover => {
         let target = event.target
         let titleList = target.classList
         let title = titleList[1]
-        let targetContent = target.outerHTML
         target.innerHTML = `<div class="work-hover-cover">
         <div>
          <button class="chain-btn"><img src="./img/elements/chain.svg" alt="chain"></button>

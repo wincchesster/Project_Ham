@@ -126,7 +126,7 @@ a {
     display: flex;
     text-transform: uppercase;
     gap: 21px;
-    color: rgba(255, 255, 255, 0.6);;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 700;
     font-size: 16px;
 }

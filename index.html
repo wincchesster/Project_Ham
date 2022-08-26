@@ -10,7 +10,7 @@
 </head>
 <body>
 
-     <!----------------- Header section: ----------------------->
+    <!----------------- Header section: ----------------------->
     <header class="header">
         <nav class="navbar">
             <div class="navbar-container">
@@ -24,13 +24,13 @@
                     </div>
                 </div>
                 <ul class="menu">
-                    <li class="menu-link">Home</li>
-                    <li class="menu-link">About</li>
-                    <li class="menu-link">Blog</li>
-                    <li class="menu-link">Skills</li>
-                    <li class="menu-link">Service</li>
-                    <li class="menu-link">Work</li>
-                    <li class="menu-link">Testimonial</li>
+                    <li class="menu-link"><a href="#">Home</a> </li>
+                    <li class="menu-link"><a href="#">About</a> </li>
+                    <li class="menu-link"><a href="#">Blog</a> </li>
+                    <li class="menu-link"><a href="#">Skills</a> </li>
+                    <li class="menu-link"><a href="#">Service</a> </li>
+                    <li class="menu-link"><a href="#">Work</a> </li>
+                    <li class="menu-link"><a href="#">Testimonial</a> </li>
                     <li class="menu-magnifier"><i class="fa-solid fa-magnifying-glass"></i></li>
                 </ul>
             </div>    
@@ -49,18 +49,16 @@
     </header>
     <main>
 
-        <!----------------- Features section: ----------------------->
+    <!----------------- Features section: ----------------------->
         <section class="features">
             <div class="features-item features-item-1"><img src="./img/elements/Combined-shape-629.svg" alt="finger"><p>Different theme option</p></div>
             <div class="features-item features-item-2"><img src="./img/elements/Diamant.svg" alt="Diamant"><p>fully customizable</p></div>
             <div class="features-item features-item-3"><img src="./img/elements/Light.svg" alt="Light"><p>unlimited support</p></div>
             <div class="features-item features-item-4"><img src="./img/elements/Devices.svg" alt="Devices"><p>responsive all device</p></div>
-
         </section>
 
-         <!----------------- Services section: ----------------------->
+    <!----------------- Services section: ----------------------->
         <section class="services container">
-
                 <h3>Our Services</h3>
                 <ul class="services-nav">
                     <li class="services-nav-link active" data-title="web-design">Web Design</li>
@@ -131,7 +129,7 @@
             </div>
         </section>
 
-         <!----------------- Amazing Work section: ----------------------->
+    <!----------------- Amazing Work section: ----------------------->
         <section class="amazing-work">
             <div class="container">
                 <h3>Our Amazing Work</h3>
@@ -173,7 +171,7 @@
         </section>
 
 
-         <!----------------- News section: ----------------------->
+    <!----------------- News section: ----------------------->
         <section class="news container">
             <h3>Breaking News</h3>
             <ul class="news-covers">
@@ -244,100 +242,55 @@
         </section>
 
 
-         <!----------------- Feedback section: ----------------------->
+    <!----------------- Feedback section: ----------------------->
         <section class="feedback">
+            
                 <h3>What People Say About theHam</h3>
                 <img src="./img/elements/Troti.svg" alt="troti">
                 <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam <br> facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
-                <div class="team">
-                    <ul class="team-intro-max">
-                        <li class="team-intro-max-case active">
-                            <span>Hasan Ali</span>
-                            <p>UX Designer</p>
-                            <img src="./img/elements/Ali.jpg" alt="ali-avatar">
-                        </li>
-                        <li class="team-intro-max-case"></li>
-                        <li class="team-intro-max-case"></li>
-                        <li class="team-intro-max-case"></li>
-                    </ul>
-                    <ul class="team-intro-min">
-                        <button class="arrow-btn left"><i class="arrow arrow-left left"></i></button>
-                        <div class="carousel">
-                            <li class="team-intro-min-case">
-                                <img class="min-avatar" src="./img/elements/ava1.jpg" alt="avatar-1">
-                            </li>
-                            <li class="team-intro-min-case">
-                                <img class="min-avatar" src="./img/elements/avatar-2.jpg" alt="avatar-2">
-                            </li>
-                            <li class="team-intro-min-case active">
-                                <img class="min-avatar" src="./img/elements/Ali.jpg" alt="avatar-3">
-                            </li>
-                            <li class="team-intro-min-case">
-                                <img class="min-avatar" src="./img/elements/avatar-4.png" alt="avatar-4">
-                            </li>
+        
+                    <div class="carousel-wrapper" >
+
+                        <div class="carousel-item" data-active-slide>
+                            <div class="credits">
+                                <span>Lara Croft</span>
+                                <p>"Never seen before"</p>
+                            </div>
+                          <img src="./img/people/Lara.jpg" alt="Lara_Croft">
                         </div>
-   
-                        <button class="arrow-btn right"><i class="arrow arrow-right right"></i></button>
-                    </ul>
-                </div>
+                        <div class="carousel-item">
+                            <div class="credits">
+                                <span>Luke Skywalker</span>
+                                <p>"Jedi tricks"</p>
+                            </div>
+                          <img src="./img/people/Luke.jpg" alt="Luke_Skywalker">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="credits">
+                                <span>Dominic Toretto</span>
+                                <p>"Faster then Vue.js"</p>
+                            </div>
+                          <img src="./img/people/Dom.jpg" alt="Dominic_Toretto">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="credits">
+                                <span>Harry Potter</span>
+                                <p>"It's like a magic!"</p>
+                            </div>
+                          <img src="./img/people/Harry.jpg" alt="Potter">
+                        </div>
+        
+                        <div class="carousel-min-imgs min-avatar" data-carousel-dots>
+                            <button type="button" class="carousel-arrow prev" data-carousel-arrows data-dir="prev"> &#x2039; </button> 
+                                <button type="button" class="min-img min-img-btn" data-active-dot data-min-img data-dots-index="1"><img src="./img/people/Lara.jpg" alt="Lara_Croft"></button>
+                                <button type="button" class="min-img min-img-btn " data-min-img data-dots-index="2"><img src="./img/people/Luke.jpg" alt="Luke_Skywalker"></button>
+                                <button type="button" class="min-img min-img-btn " data-min-img data-dots-index="3"> <img src="./img/people/Dom.jpg" alt="Dominic_Toretto"></button>
+                                <button type="button" class="min-img min-img-btn " data-min-img data-dots-index="4"> <img src="./img/people/Harry.jpg" alt="Potter"> </button>
+                            <button type="button" class="carousel-arrow next" data-carousel-arrows data-dir="next"> &#x203A; </button>
+                        </div>
+                      </div>    
         </section>
-
-
-
-        <section class="test container feedback">
-
-            <h3>What People Say About theHam</h3>
-            <img src="./img/elements/Troti.svg" alt="troti">
-            <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam <br> facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
-
-
-            <div class="carousel-wrapper" js-carousel-wrapper>
-
-                <!-- Images -->
-                <div class="carousel-item" js-carousel-item data-active-slide>
-                  <img src="./img/elements/ava1.jpg" alt="">
-                </div>
-                <div class="carousel-item" js-carousel-item>
-                  <img src="./img/elements/avatar-2.jpg" alt="">
-                </div>
-                <div class="carousel-item" js-carousel-item>
-                  <img src="./img/elements/Ali.jpg" alt="">
-                </div>
-                <div class="carousel-item" js-carousel-item>
-                  <img src="./img/elements/avatar-4.png" alt="">
-                </div>
-
-                <!-- Navigation Arrows -->
-                <button type="button" class="carousel-arrow prev" data-carousel-arrows data-dir="prev"> &#x2039; </button>
-                <button type="button" class="carousel-arrow next" data-carousel-arrows data-dir="next"> &#x203A; </button>
-                <!-- Pagination Dots -->
-                <div class="carousel-dots" data-carousel-dots>
-                  <button type="button" class="dots dot-btn" data-active-dot js-data-dots data-dots-index="1"><img src="./img/elements/ava1.jpg" alt=""></button>
-                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="2"><img src="./img/elements/avatar-2.jpg" alt=""></button>
-                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="3"><img src="./img/elements/Ali.jpg" alt=""></button>
-                  <button type="button" class="dots dot-btn " js-data-dots data-dots-index="4"> <img src="./img/elements/avatar-4.png" alt=""> </button>
-                  
-                </div>
-              </div>
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <!----------------- Gallery section: ----------------------->
-        <!-- <section class="gallery container">
-            <h3>Gallery of best images</h3>
-        </section> -->
+     <!----------------- Gallery section: ---------------------->
     </main>
 
      <!----------------- Footer section: ----------------------->

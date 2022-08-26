@@ -61,6 +61,26 @@ function openActiveTab2(tab) {
     activeTab.classList.add('active')
 }
 
+const coverBoards = document.querySelectorAll('.aw-template') 
+
+coverBoards.forEach(cover => {
+    cover.addEventListener('mouseenter', function(event) {
+
+        let target = event.target
+        let titleList = target.classList
+        let title = titleList[1]
+        let targetContent = target.outerHTML
+        target.innerHTML = `<div class="work-hover-cover">
+        <div>
+         <button class="chain-btn"><img src="./img/elements/chain.svg" alt="chain"></button>
+         <button class="stop-btn"><img src="./img/elements/stop.svg" alt="stop"></button>
+        </div>
+        <span>Creative Design</span>
+        <p>${title}</p>
+      </div> `
+    })
+})
+
 
 
 // ---------------------------------------------Load More Function:
@@ -88,7 +108,6 @@ function openActiveTab2(tab) {
 
 const loadMoreBtn = document.querySelector('.load-more-btn');
 const moreWorks = document.querySelectorAll('.aw-template')
-console.log(moreWorks)
 
 loadMoreBtn.addEventListener('click', () => {
     loadMoreBtn.classList.add('loading-btn')
@@ -102,3 +121,8 @@ loadMoreBtn.addEventListener('click', () => {
         loadMoreBtn.classList.add('hiden')
     }, 1000);
 });
+
+
+
+
+

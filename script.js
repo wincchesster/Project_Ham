@@ -1,3 +1,5 @@
+// ------------------------------------------- Services tabs:
+
 const serviceTabs = document.querySelectorAll('.services-nav-link')
 const serviceContent = document.querySelectorAll('.services-content')
 
@@ -23,6 +25,45 @@ function openActiveTab(tab) {
 }
 
 
+
+
+// -------------------------------------------Amazing Work tabs:
+
+const workTabs = document.querySelectorAll('.amazing-work-tab')
+const workTamplates = document.querySelectorAll('.aw-template')
+
+workTabs.forEach(tab => {
+    tab.addEventListener('click', openActiveTab2);
+});
+
+function openActiveTab2(tab) {
+    let activeTab = tab.currentTarget;
+    let title = activeTab.dataset.title
+
+    workTabs.forEach(tab => {
+        tab.classList.remove('active')
+    });
+
+    workTamplates.forEach(tab => {
+        tab.classList.remove("active");
+     });
+
+
+    workTamplates.forEach(cover => {
+        if (cover.classList.contains(title)) {
+        cover.classList.add('active')
+        loadMoreBtn.classList.add('hiden')
+        } else {
+            cover.classList.add('hiden')
+        }
+    });
+
+    activeTab.classList.add('active')
+}
+
+
+
+// ---------------------------------------------Load More Function:
 
 
 

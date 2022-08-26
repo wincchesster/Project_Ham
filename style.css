@@ -251,7 +251,7 @@ h3::before {
     margin-top: 70px;
     color: #E9EDEF;
     -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
     -webkit-animation-name: rotate;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -438,6 +438,11 @@ h3::before {
     line-height: 42px;
     border: 1px #DADADA solid;
     padding: 15px 20px;
+    cursor: pointer;
+}
+
+.amazing-work-tab:hover {
+    border: 1px #5cb9a6 solid;
 }
 
 .amazing-work-tab.active {
@@ -462,11 +467,15 @@ h3::before {
     float: left;
     animation: scale 0.5sforwards;
     -webkit-animation: scale 0.5s forwards;
-    transform-origin:   left;
+    transform-origin:  center;
+}
+
+.aw-template.active {
+    display: block;
 }
 
 
-@-webkit-keyframes scale  {
+@keyframes scale  {
     0% {
         transform: scale(0.5);
         -webkit-transform: scale(0.5);
@@ -655,9 +664,6 @@ h3::before {
     background: #18CFAB;
 }
 
-.team-intro-min .arrow:hover {
-}
-  
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);

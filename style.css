@@ -489,13 +489,30 @@ a {
 }
 
 .aw-template {
+    height: 200px;
     width: 25%;
     transition: 0.2s;
     position: relative;
     float: left;
     animation: scale 0.5s forwards;
     transform-origin:  center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    background-position: center;
 
+}
+
+.chain-block {
+    background: #E9EDEF;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 0.5s forwards;
+    overflow: hidden;
 }
 
 
@@ -519,6 +536,15 @@ a {
     }
 }
 
+@keyframes slide  {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 
 
 .load-more-btn p {
@@ -530,16 +556,8 @@ a {
 }
 
 
-.work-hover-cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 213.3px;
-    gap: 5px;
-}
 
-.work-hover-cover span {
+.chain-block span {
     font-weight: 700;
     font-size: 14.1771px;
     line-height: 25px;
@@ -548,7 +566,7 @@ a {
     padding-top: 15px;
 }
 
-.work-hover-cover p {
+.chain-block p {
     font-weight: 300;
     font-size: 12.1518px;
     color: #8A8A8A;

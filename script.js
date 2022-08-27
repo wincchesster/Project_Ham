@@ -98,19 +98,21 @@ coverBoards.forEach(cover => {
         let target = event.target
         let titleList = target.classList
         let title = titleList[1]
-        target.innerHTML = `<div class="work-hover-cover">
+        target.innerHTML = `
+        <div class='chain-block'>
         <div>
          <button class="chain-btn"><img src="./img/elements/chain.svg" alt="chain"></button>
-         <button class="stop-btn"><img src="./img/elements/stop.svg" alt="stop"></button>
-        </div>
-        <span>Creative Design</span>
+         <button class="stop-btn"><img src="./img/elements/stop.svg" alt="stop"></button>   
+         </div>
+        <span>Creative Design</span>    
         <p>${title}</p>
-      </div> `
+        </div>
+      `;
     })
 
 
-    cover.addEventListener('mouseout', function(event) {
-        console.log(event.target)
+    cover.addEventListener('mouseleave', function(event) {
+        event.target.innerHTML= ``;
     }) 
 })
 
